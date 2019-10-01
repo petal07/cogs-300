@@ -1,5 +1,5 @@
 /*
- * INITIALIZE YOUR SENSORS!
+ * Initializing sensors
  */
 
 #define MOTOR_A_1A 9 // right
@@ -8,6 +8,7 @@
 #define MOTOR_B_1B 6 // left
 //#include <NewPing.h>
 
+// Speed of the wheels to drive straight
 int rSpeed = 125; //135
 int lSpeed = 160; //170
 
@@ -121,6 +122,7 @@ void sonarDebug(){
 
 }
 
+// 
 void sonarMovement(){
    unsigned int ldistance = leftsonar.ping_cm();
    unsigned int fdistance = frontsonar.ping_cm();
